@@ -230,6 +230,7 @@ def dealerstand():
     if (sum(card.numeric_value for card in theDealer.dealercards)) > (sum(card.numeric_value for card in yourPlayer.mycards)):
         print("( ͝סּ ͜ʖ͡סּ): Looks like I beat you! Better luck next time.")
         time.sleep(2)
+        playagainq()
     elif (sum(card.numeric_value for card in theDealer.dealercards)) == (sum(card.numeric_value for card in yourPlayer.mycards)):
          yourPlayer.balance += yourPlayer.currentbet
          print("( ͝סּ ͜ʖ͡סּ): Looks like we draw! Your bet money has been returned to your account.")
